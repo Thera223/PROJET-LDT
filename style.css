@@ -1,4 +1,8 @@
-/* Réinitialisation des marges, des rembourrages et de la boîte */
+:root {
+  --couleur-text-principale:#130a66;
+  --taille-police-principale: 20px;
+  --taille-police-secondaire: 16px;
+}
 *,
 *::before,
 *::after {
@@ -118,10 +122,7 @@ h1 {
   margin-bottom: 0;
 }
 
-/* Survolez la tâche pour le style */
-.todo:hover {
-  background-color: c; /* Il semble manquer une valeur ici */
-}
+
 
 /* Étiquette de la tâche */
 .todo label {
@@ -185,7 +186,6 @@ input:checked + span::before {
 /* Conteneur des tâches avec défilement */
 .todos-container {
   height: 300px;
-  overflow: overlay;
 }
 
 /* Barre de défilement personnalisée */
@@ -203,7 +203,7 @@ input:checked + span::before {
 }
 
 .todos-container::-webkit-scrollbar-thumb {
-  background: #691313;
+  background: #130a66;
   border-radius: 20px;
 }
 
@@ -238,6 +238,7 @@ input:checked + span::before {
   padding: 7px 15px;
   cursor: pointer;
   transition: all 0.2s ease;
+  border: 2px solid #130a66 ;
 }
 
 /* Style survolé du bouton de suppression de tout */
